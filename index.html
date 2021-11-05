@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewpoint' content="width=device-width, initial-scale=1.0">
+        <meta http-eqiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Counter</title>
+        <style>
+            body{
+                background-color: lightsalmon;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD2LMBVc6_gQOIPzWpBbftjihlHjVGrubKJw&usqp=CAU");
+                margin: 0 auto;
+            }
+            .center{
+                background-color:darkblue;
+                margin: 200px 500px;
+                height: 35vh;
+                text-align: center;
+                width: 30vw;
+            }
+            .d1{
+                color: yellow;
+                background-color: brown;
+                width: 120px;
+                height: 50px;
+                border: 0px;
+                font-weight: bolder;
+                margin-left: 50px;
+            
+                
+            }
+            input{
+                color: red;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD2LMBVc6_gQOIPzWpBbftjihlHjVGrubKJw&usqp=CAU");
+                text-align: center;
+                margin-left: 30px;
+                width: 120px;
+                height: 80px;
+                font-weight: bolder;
+                border: 0px;
+                font-size: xx-large;
+                border-radius: 50px;
+
+            }
+            #left{
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            body:hover{
+                background-image: url("https://thumbs.dreamstime.com/z/bamboo-basket-weave-pattern-texture-background-background-bamboo-basket-weave-pattern-texture-background-background-132875882.jpg");
+            }
+            button:hover{
+                background-color:tomato;
+                color: blue;
+            }
+            div:hover h1{
+                background-color:tomato;
+                border-radius: 20px;
+         
+            }
+            .center:hover{
+                border-radius: 50px;
+                background-color:teal;
+            }
+            body:hover input{
+                background:turquoise;
+            }
+            
+        </style>
+        <script>
+            function decrement() {
+            var int = document.getElementById('x')
+            var x = document.getElementById('x').value
+            var z = parseInt(x)
+            z = z - 1;
+            int.value = z
+        }
+        function increment() {
+            var int = document.getElementById('x')
+            var x = document.getElementById('x').value
+            var z = parseInt(x)
+            z = z + 1;
+            int.value = z
+        }
+        
+</script>
+    </head>
+    <body>
+        <div class="center">
+        <h1 style="color: yellow;font-weight: bolder;">COUNTER</h1>
+        <input type="text" id='x' value="0"> <br><br>
+        <button class="d1" id='left' onclick="decrement()"><h2>Decrement</h2></button>
+        <button class="d1" onclick="increment()"><h2>Increment</h2></button>
+        </div>
+    </body>
+</html>
